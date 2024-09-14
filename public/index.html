@@ -117,7 +117,7 @@
     ></script>
 
     <script>
-        let myPieChart;
+      let myPieChart;
 
       const dataSource = {
         labels: [],
@@ -129,6 +129,11 @@
               "rgb(255, 99, 132)",
               "rgb(54, 162, 235)",
               "rgb(255, 205, 86)",
+              "rgb(75, 192, 192)",
+              "rgb(153, 102, 255)",
+              "rgb(255, 159, 64)",
+              "rgb(201, 203, 207)",
+              "rgb(0, 204, 102)",
             ],
             hoverOffset: 4,
           },
@@ -146,15 +151,15 @@
       function getBudget() {
         axios.get("/budget").then(function (res) {
           console.log(res.data);
-        for (let i = 0; i < res.data.myBudget.length; i++) {
-          dataSource.labels.push(res.data.myBudget[i].title);
-          dataSource.datasets[0].data.push(res.data.myBudget[i].budget);
-        }
-        if (myPieChart) {
-          myPieChart.update();
-        } else {
-          createChart();
-        }
+          for (let i = 0; i < res.data.myBudget.length; i++) {
+            dataSource.labels.push(res.data.myBudget[i].title);
+            dataSource.datasets[0].data.push(res.data.myBudget[i].budget);
+          }
+          if (myPieChart) {
+            myPieChart.update();
+          } else {
+            createChart();
+          }
         });
       }
       getBudget();
