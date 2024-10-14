@@ -1,12 +1,39 @@
-{
+  {
     "myBudget": [
-      { "title": "Rent", "budget": 350 },
-      { "title": "Groceries", "budget": 90 },
-      { "title": "Eat Out", "budget": 30 },
-      { "title": "Utilities", "budget": 100 },
-      { "title": "Entertainment", "budget": 70 },
-      { "title": "Gas", "budget": 50 },
-      { "title": "Savings", "budget": 100 }
-    ]
-  }
-  
+        {
+            "title": "Eat Out",
+            "budget": 30,
+            "backgroundColor": "#FF6384"
+        },
+        {
+            "title": "Rent",
+            "budget": 350,
+            "backgroundColor": "#36A2EB"
+        },
+        {
+            "title": "Groceries",
+            "budget": 90,
+            "backgroundColor": "#FFCD56"
+        },
+        {
+            "title": "Utilities",
+            "budget": 100,
+            "backgroundColor": "#4BC0C0"
+        },
+        {
+            "title": "Entertainment",
+            "budget": 70,
+            "backgroundColor": "#9666FF"
+        },
+        {
+            "title": "Gas",
+            "budget": 50,
+            "backgroundColor": "#FF9F40"
+        },
+        {
+            "title": "Savings",
+            "budget": 100,
+            "backgroundColor": "#C9CBCF"
+        }
+    ]    
+}
